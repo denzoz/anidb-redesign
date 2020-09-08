@@ -1,0 +1,29 @@
+html {
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    height: 200vh;
+    width: 95vw;
+    margin-left: 5vw;
+}
+
+
+@keyframes sidebarAnimation {
+    from {width: 5vw;}
+    to {width: 10vw;}
+}
+
+#sidebar {
+    background-color: #34394D;
+    width: 5vw;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+}
+
+#sidebar #logoImgSmall {
+    max-width: 5vw;
+}
