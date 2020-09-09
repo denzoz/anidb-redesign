@@ -1,12 +1,8 @@
-html {
-    overflow: hidden;
-}
-
 body {
     margin: 0;
     height: 200vh;
-    width: 95vw;
-    margin-left: 5vw;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -18,12 +14,33 @@ body {
 #sidebar {
     background-color: #34394D;
     width: 5vw;
-    height: 100vh;
-    position: absolute;
-    left: 0;
+    height: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
     z-index: 1;
 }
 
 #sidebar #logoImgSmall {
     max-width: 5vw;
+    position: fixed;
+}
+
+#main {
+    height: 100%;
+    width: 95vw;
+    margin-left: 5vw;
+    display: flex;
+    align-self: flex-start;
+}
+
+#newsBox {
+    height: 10vh;
+    width: 5vw;
+    background-color: #cfd1d4;
+}
+
+footer {
+    align-self: flex-end;
+    width: 100%;
 }
