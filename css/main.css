@@ -3,6 +3,8 @@ body {
     height: 200vh;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
+
 }
 
 
@@ -14,24 +16,49 @@ body {
 #sidebar {
     background-color: #34394D;
     width: 5vw;
-    height: 100%;
-    position: -webkit-sticky;
-    position: sticky;
+    height: 100vh;
+    position: fixed;
     top: 0;
     z-index: 1;
+
+}
+
+#sidebarContent {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 5vw;
+}
+
+#sidebarContent ul li a {
+    color: 	#bdbfc3;
+    text-decoration: none;
+}
+
+#sidebarContent ul li a:hover {
+    background-color: #bdbfc3;
+    color: #0c4e86;
 }
 
 #sidebar #logoImgSmall {
     max-width: 5vw;
-    position: fixed;
+}
+
+#sidebar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+body div {
+    margin-left: 5vw;
+    width: 95vw;
 }
 
 #main {
-    height: 100%;
-    width: 95vw;
-    margin-left: 5vw;
-    display: flex;
-    align-self: flex-start;
+    height: 100vh;
+    width: 100%;
 }
 
 #newsBox {
@@ -42,5 +69,7 @@ body {
 
 footer {
     align-self: flex-end;
+    display: flex;
+    justify-content: center;
     width: 100%;
 }
